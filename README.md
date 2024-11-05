@@ -1,1 +1,1 @@
-# RIDStitcher
+# RDIStitcher
