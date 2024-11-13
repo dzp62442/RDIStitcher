@@ -67,7 +67,7 @@ accelerate launch train.py \
   --text_encoder_learning_rate=4e-5 \
   --lr_scheduler="constant" \
   --lr_warmup_steps=100 \
-  --max_train_steps=50000 \
+  --max_train_steps=10001 \
   --lora_rank=8 \
   --lora_dropout=0.1 \
   --lora_alpha=16 \
@@ -104,7 +104,7 @@ accelerate launch train.py \
   --text_encoder_learning_rate=4e-5 \
   --lr_scheduler="constant" \
   --lr_warmup_steps=100 \
-  --max_train_steps=50000 \
+  --max_train_steps=10001 \
   --lora_rank=8 \
   --lora_dropout=0.1 \
   --lora_alpha=16 \
