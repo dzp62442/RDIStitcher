@@ -46,7 +46,7 @@ The test set is in the same format as the training set.
     bash train.sh
 ```
 
-This training configuration requires ~24 GB VRAM with 2 GPUs.
+This training configuration of `train.sh` requires ~24 GB VRAM with 2 GPUs.
 
 ```bash
 export MODEL_NAME="stabilityai/stable-diffusion-2-inpainting"
@@ -79,7 +79,7 @@ accelerate launch train.py \
 ```
 ### Training on a low-memory GPU:
 
-This training configuration requires ~16 GB VRAM with 2 GPUs.
+This training configuration of `train.sh` requires ~16 GB VRAM with 2 GPUs.
 
 ```bash
 export MODEL_NAME="stabilityai/stable-diffusion-2-inpainting"
@@ -115,15 +115,9 @@ accelerate launch train.py \
   --validation_steps 500
 ```
 
-## Test
+## Inference
 
-Our pre-trained LoRA weights are very small at only 12MB, so you can use it directly in the `loraweight` document. Due to hardware limitations, we cannot give the best "LoRA" setting, but we think the presented pre-trained LoRA weight is sufficient to demonstrate the effectiveness of our work.
-
-```bash
-    bash test.sh
-```
-
-This testing configuration requires ~6 GB VRAM.
+This inference process requires ~6 GB VRAM.
 
 ```bash
 python inference.py \
@@ -133,6 +127,8 @@ python inference.py \
     --data_root "path-to-test-set" \
     --num_seed 5
 ```
+
+Our pre-trained LoRA weights are very small at only 12MB, so you can use it directly in the `loraweight` document. Due to hardware limitations, we cannot give the best "LoRA" setting, but we think the presented pre-trained LoRA weight is sufficient to demonstrate the effectiveness of our work.
 
 ## MLLM-based Metrics
 
