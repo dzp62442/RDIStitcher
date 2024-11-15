@@ -130,7 +130,7 @@ python inference.py \
 
 Our pre-trained LoRA weights are very small at only 12MB, so you can use it directly in the `loraweight` document. Due to hardware limitations, we cannot give the best "LoRA" setting, but we think the presented pre-trained LoRA weight is sufficient to demonstrate the effectiveness of our work.
 
-## MLLM-based Metrics
+## Metrics
 
 For using qwen:
  ```bash
