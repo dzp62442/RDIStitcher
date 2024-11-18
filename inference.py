@@ -63,7 +63,7 @@ def main(args):
         os.makedirs(save_root)
 
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
-        pretrained_model_name_or_path, local_files_only=True, torch_dtype=torch.float16
+        pretrained_model_name_or_path, torch_dtype=torch.float16
     )
 
     pipe.load_lora_weights(loramodel_path)
