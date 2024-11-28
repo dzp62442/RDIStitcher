@@ -2,8 +2,8 @@
 
 ## 📝 Changelog
 
-- [x] 2024.11.14: The repository of RDIStitcher is created.
-- [x] 2024.11.18: Release the inference code and pre-trained models.
+- [x] 2024.11.14 The repository of RDIStitcher is created.
+- [x] 2024.11.18 Release the inference code and pre-trained models.
 - [x] 2024.11.28 Release the training code.
 - [x] 2024.11.28 Release the MLLM-based metrics code.
 
