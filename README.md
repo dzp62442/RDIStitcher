@@ -29,8 +29,27 @@ The UDIS-D dataset, aligned images, and masks can be obtained from  [UDIS](https
   
 The datasets should be organized as follows: 
 
+<details>
+<summary>Click for details...</summary>
+  
 ```
 train
+├── input1
+│   ├── 000001.jpg
+│   ├── ...
+├── input2
+│   ├── 000001.jpg
+│   ├── ...
+├── mask1
+│   ├── 000001.jpg
+│   ├── ...
+├── mask2
+│   ├── 000001.jpg
+│   ├── ...
+```
+
+```
+test
 ├── warp1
 │   ├── 000001.jpg
 │   ├── ...
@@ -44,8 +63,7 @@ train
 │   ├── 000001.jpg
 │   ├── ...
 ```
-
-The test set is in the same format as the training set.
+</details>
 
 ## Train
 
