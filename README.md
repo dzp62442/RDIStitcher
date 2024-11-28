@@ -4,8 +4,8 @@
 
 - [x] 2024.11.14: The repository of RDIStitcher is created.
 - [x] 2024.11.18: Release the inference code and pre-trained models.
-- [ ] Release the training code. **The author is too too busy now, still organizing the training code, it will be released in a week.**
-- [ ] Release the MLLM-based metrics code. **See above.**
+- [x] 2024.11.28 Release the training code.
+- [x] 2024.11.28 Release the MLLM-based metrics code.
 
 ## Requirements
 - Python >= 3.9
