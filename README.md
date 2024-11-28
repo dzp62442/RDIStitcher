@@ -144,6 +144,7 @@ python inference.py \
     --pretrained_model_name_or_path "stabilityai/stable-diffusion-2-inpainting" \
     --loramodel_path "loraweight" \
     --data_root "path-to-test-set" \
+    --test_prompt "<A>" \
     --num_seed 5
 ```
 
