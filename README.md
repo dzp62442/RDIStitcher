@@ -1,3 +1,10 @@
+进行与 ChatStitch SV-UDIS 的对比实验：
+```bash
+python inference_sv_comp.py.py
+```
+
+---
+
 # Modification Takes Courage: Seamless Image Stitching via Reference-Driven Inpainting
 
 ## 📝 Changelog
