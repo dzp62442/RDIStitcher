@@ -1,0 +1,10 @@
+__pycache__/
+*.pth
+*.zip
+*.tar
+events*
+models/
+coarse*/
+*Results/
+*results/
+Datasets

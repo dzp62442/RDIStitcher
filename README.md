@@ -12,17 +12,25 @@
 - GPU (NVIDIA CUDA compatible) >=24 GB VRAM **If you only have GPUs with 16GB VRAM, we give a low memory plan.**
   
 - Create a virtual environment (optional but recommended):
+```bash
+conda create -n rdistitcher python==3.10
+conda activate rdistitcher
+```
 
-    ```bash
-    conda create -n rdistitcher python==3.10
-    conda activate rdistitcher
-    ```
-    
+- Pytorch
+```bash
+pip install numpy==1.24.1 torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+```
+
+- Core
+```bash
+pip install transformers==4.36.0 diffusers==0.20.1
+```
+
 - Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 ## Dataset
  
 The UDIS-D dataset, aligned images, and masks can be obtained from  [UDIS](https://github.com/nie-lang/UnsupervisedDeepImageStitching) 
@@ -68,7 +76,7 @@ test
 ## Train
 
 ```bash
-    bash train.sh
+bash train.sh
 ```
 
 This training configuration of `train.sh` requires ~24 GB VRAM with 2 GPUs.
@@ -151,6 +159,8 @@ accelerate launch train.py \
 
 ## Inference
 
+Download [stable-diffusion-2-inpainting](https://huggingface.co/stabilityai/stable-diffusion-2-inpainting) and put it in the `models` folder.
+
 This inference process requires ~6 GB VRAM.
 
 <details>
@@ -159,9 +169,9 @@ This inference process requires ~6 GB VRAM.
 ```bash
 python inference.py \
     --device "cuda" \
-    --pretrained_model_name_or_path "stabilityai/stable-diffusion-2-inpainting" \
+    --pretrained_model_name_or_path "models/stable-diffusion-2-inpainting" \
     --loramodel_path "loraweight" \
-    --data_root "path-to-test-set" \
+    --data_root "examples" \
     --test_prompt "<A>" \
     --num_seed 5
 ```
